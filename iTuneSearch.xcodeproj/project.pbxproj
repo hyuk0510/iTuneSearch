@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		D83EFA322AFCEECF004ABB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA312AFCEECF004ABB03 /* AppDelegate.swift */; };
 		D83EFA342AFCEECF004ABB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA332AFCEECF004ABB03 /* SceneDelegate.swift */; };
-		D83EFA362AFCEECF004ABB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA352AFCEECF004ABB03 /* ViewController.swift */; };
-		D83EFA392AFCEECF004ABB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83EFA372AFCEECF004ABB03 /* Main.storyboard */; };
 		D83EFA3B2AFCEED0004ABB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83EFA3A2AFCEED0004ABB03 /* Assets.xcassets */; };
 		D83EFA3E2AFCEED0004ABB03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83EFA3C2AFCEED0004ABB03 /* LaunchScreen.storyboard */; };
+		D83EFA472AFCEF3D004ABB03 /* iTuneTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA462AFCEF3D004ABB03 /* iTuneTabBarController.swift */; };
+		D83EFA492AFCEF49004ABB03 /* iTuneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA482AFCEF49004ABB03 /* iTuneViewController.swift */; };
+		D83EFA4B2AFCEFBE004ABB03 /* iTuneSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA4A2AFCEFBE004ABB03 /* iTuneSampleViewController.swift */; };
+		D83EFA4E2AFCF094004ABB03 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA4D2AFCF094004ABB03 /* SnapKit */; };
+		D83EFA512AFCF09A004ABB03 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA502AFCF09A004ABB03 /* Kingfisher */; };
+		D83EFA542AFCF0B4004ABB03 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA532AFCF0B4004ABB03 /* RxCocoa */; };
+		D83EFA562AFCF0B4004ABB03 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA552AFCF0B4004ABB03 /* RxRelay */; };
+		D83EFA582AFCF0B4004ABB03 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA572AFCF0B4004ABB03 /* RxSwift */; };
+		D83EFA5B2AFCF27D004ABB03 /* iTuneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA5A2AFCF27D004ABB03 /* iTuneCollectionViewCell.swift */; };
+		D83EFA5E2AFCF300004ABB03 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA5D2AFCF300004ABB03 /* ReusableViewProtocol.swift */; };
+		D83EFA612AFCF506004ABB03 /* iTuneAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA602AFCF506004ABB03 /* iTuneAPIManager.swift */; };
+		D83EFA642AFCF9F7004ABB03 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA632AFCF9F7004ABB03 /* RxDataSources */; };
+		D83EFA662AFD03C9004ABB03 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA652AFD03C9004ABB03 /* AppDetailViewController.swift */; };
+		D83EFA692AFD0A44004ABB03 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA682AFD0A44004ABB03 /* AppData.swift */; };
+		D83EFA6C2AFD0B4F004ABB03 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA6B2AFD0B4F004ABB03 /* Moya */; };
+		D83EFA6E2AFD0B4F004ABB03 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D83EFA6D2AFD0B4F004ABB03 /* RxMoya */; };
+		D83EFA702AFD0DC0004ABB03 /* iTuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EFA6F2AFD0DC0004ABB03 /* iTuneAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D83EFA2E2AFCEECF004ABB03 /* iTuneSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTuneSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83EFA312AFCEECF004ABB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83EFA332AFCEECF004ABB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D83EFA352AFCEECF004ABB03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D83EFA382AFCEECF004ABB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D83EFA3A2AFCEED0004ABB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83EFA3D2AFCEED0004ABB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D83EFA3F2AFCEED0004ABB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83EFA462AFCEF3D004ABB03 /* iTuneTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneTabBarController.swift; sourceTree = "<group>"; };
+		D83EFA482AFCEF49004ABB03 /* iTuneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneViewController.swift; sourceTree = "<group>"; };
+		D83EFA4A2AFCEFBE004ABB03 /* iTuneSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneSampleViewController.swift; sourceTree = "<group>"; };
+		D83EFA5A2AFCF27D004ABB03 /* iTuneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneCollectionViewCell.swift; sourceTree = "<group>"; };
+		D83EFA5D2AFCF300004ABB03 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		D83EFA602AFCF506004ABB03 /* iTuneAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneAPIManager.swift; sourceTree = "<group>"; };
+		D83EFA652AFD03C9004ABB03 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		D83EFA682AFD0A44004ABB03 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		D83EFA6F2AFD0DC0004ABB03 /* iTuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTuneAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83EFA542AFCF0B4004ABB03 /* RxCocoa in Frameworks */,
+				D83EFA512AFCF09A004ABB03 /* Kingfisher in Frameworks */,
+				D83EFA582AFCF0B4004ABB03 /* RxSwift in Frameworks */,
+				D83EFA642AFCF9F7004ABB03 /* RxDataSources in Frameworks */,
+				D83EFA562AFCF0B4004ABB03 /* RxRelay in Frameworks */,
+				D83EFA6C2AFD0B4F004ABB03 /* Moya in Frameworks */,
+				D83EFA6E2AFD0B4F004ABB03 /* RxMoya in Frameworks */,
+				D83EFA4E2AFCF094004ABB03 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +86,62 @@
 		D83EFA302AFCEECF004ABB03 /* iTuneSearch */ = {
 			isa = PBXGroup;
 			children = (
+				D83EFA5F2AFCF4DF004ABB03 /* Network */,
+				D83EFA5C2AFCF2E9004ABB03 /* Protocol */,
+				D83EFA452AFCEF32004ABB03 /* Scene */,
 				D83EFA312AFCEECF004ABB03 /* AppDelegate.swift */,
 				D83EFA332AFCEECF004ABB03 /* SceneDelegate.swift */,
-				D83EFA352AFCEECF004ABB03 /* ViewController.swift */,
-				D83EFA372AFCEECF004ABB03 /* Main.storyboard */,
 				D83EFA3A2AFCEED0004ABB03 /* Assets.xcassets */,
 				D83EFA3C2AFCEED0004ABB03 /* LaunchScreen.storyboard */,
 				D83EFA3F2AFCEED0004ABB03 /* Info.plist */,
 			);
 			path = iTuneSearch;
+			sourceTree = "<group>";
+		};
+		D83EFA452AFCEF32004ABB03 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D83EFA462AFCEF3D004ABB03 /* iTuneTabBarController.swift */,
+				D83EFA592AFCF264004ABB03 /* Search */,
+				D83EFA672AFD03CD004ABB03 /* Detail */,
+				D83EFA4A2AFCEFBE004ABB03 /* iTuneSampleViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		D83EFA592AFCF264004ABB03 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D83EFA482AFCEF49004ABB03 /* iTuneViewController.swift */,
+				D83EFA5A2AFCF27D004ABB03 /* iTuneCollectionViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D83EFA5C2AFCF2E9004ABB03 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D83EFA5D2AFCF300004ABB03 /* ReusableViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D83EFA5F2AFCF4DF004ABB03 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D83EFA602AFCF506004ABB03 /* iTuneAPIManager.swift */,
+				D83EFA682AFD0A44004ABB03 /* AppData.swift */,
+				D83EFA6F2AFD0DC0004ABB03 /* iTuneAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D83EFA672AFD03CD004ABB03 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D83EFA652AFD03C9004ABB03 /* AppDetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +160,16 @@
 			dependencies = (
 			);
 			name = iTuneSearch;
+			packageProductDependencies = (
+				D83EFA4D2AFCF094004ABB03 /* SnapKit */,
+				D83EFA502AFCF09A004ABB03 /* Kingfisher */,
+				D83EFA532AFCF0B4004ABB03 /* RxCocoa */,
+				D83EFA552AFCF0B4004ABB03 /* RxRelay */,
+				D83EFA572AFCF0B4004ABB03 /* RxSwift */,
+				D83EFA632AFCF9F7004ABB03 /* RxDataSources */,
+				D83EFA6B2AFD0B4F004ABB03 /* Moya */,
+				D83EFA6D2AFD0B4F004ABB03 /* RxMoya */,
+			);
 			productName = iTuneSearch;
 			productReference = D83EFA2E2AFCEECF004ABB03 /* iTuneSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +198,13 @@
 				Base,
 			);
 			mainGroup = D83EFA252AFCEECF004ABB03;
+			packageReferences = (
+				D83EFA4C2AFCF094004ABB03 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D83EFA4F2AFCF09A004ABB03 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D83EFA522AFCF0B4004ABB03 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D83EFA622AFCF9F7004ABB03 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				D83EFA6A2AFD0B4F004ABB03 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = D83EFA2F2AFCEECF004ABB03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +221,6 @@
 			files = (
 				D83EFA3E2AFCEED0004ABB03 /* LaunchScreen.storyboard in Resources */,
 				D83EFA3B2AFCEED0004ABB03 /* Assets.xcassets in Resources */,
-				D83EFA392AFCEECF004ABB03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +231,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83EFA362AFCEECF004ABB03 /* ViewController.swift in Sources */,
+				D83EFA662AFD03C9004ABB03 /* AppDetailViewController.swift in Sources */,
+				D83EFA4B2AFCEFBE004ABB03 /* iTuneSampleViewController.swift in Sources */,
 				D83EFA322AFCEECF004ABB03 /* AppDelegate.swift in Sources */,
+				D83EFA612AFCF506004ABB03 /* iTuneAPIManager.swift in Sources */,
+				D83EFA492AFCEF49004ABB03 /* iTuneViewController.swift in Sources */,
 				D83EFA342AFCEECF004ABB03 /* SceneDelegate.swift in Sources */,
+				D83EFA5E2AFCF300004ABB03 /* ReusableViewProtocol.swift in Sources */,
+				D83EFA5B2AFCF27D004ABB03 /* iTuneCollectionViewCell.swift in Sources */,
+				D83EFA472AFCEF3D004ABB03 /* iTuneTabBarController.swift in Sources */,
+				D83EFA702AFD0DC0004ABB03 /* iTuneAPI.swift in Sources */,
+				D83EFA692AFD0A44004ABB03 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D83EFA372AFCEECF004ABB03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D83EFA382AFCEECF004ABB03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D83EFA3C2AFCEED0004ABB03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +390,6 @@
 				INFOPLIST_FILE = iTuneSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +417,6 @@
 				INFOPLIST_FILE = iTuneSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +454,92 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D83EFA4C2AFCF094004ABB03 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		D83EFA4F2AFCF09A004ABB03 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		D83EFA522AFCF0B4004ABB03 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		D83EFA622AFCF9F7004ABB03 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		D83EFA6A2AFD0B4F004ABB03 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D83EFA4D2AFCF094004ABB03 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA4C2AFCF094004ABB03 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D83EFA502AFCF09A004ABB03 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA4F2AFCF09A004ABB03 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D83EFA532AFCF0B4004ABB03 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA522AFCF0B4004ABB03 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D83EFA552AFCF0B4004ABB03 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA522AFCF0B4004ABB03 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D83EFA572AFCF0B4004ABB03 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA522AFCF0B4004ABB03 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D83EFA632AFCF9F7004ABB03 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA622AFCF9F7004ABB03 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		D83EFA6B2AFD0B4F004ABB03 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA6A2AFD0B4F004ABB03 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		D83EFA6D2AFD0B4F004ABB03 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83EFA6A2AFD0B4F004ABB03 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D83EFA262AFCEECF004ABB03 /* Project object */;
 }
