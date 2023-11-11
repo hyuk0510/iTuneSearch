@@ -16,18 +16,37 @@ final class iTuneCollectionViewCell: UICollectionViewCell {
         view.contentMode = .scaleAspectFit
         view.layer.cornerRadius = 15
         view.clipsToBounds = true
+        view.layer.borderWidth = 0.5
+        view.layer.borderColor = UIColor.lightGray.cgColor
         return view
     }()
     
     let titleLabel = {
         let view = UILabel()
+        view.numberOfLines = 2
+        return view
+    }()
+    
+    let descriptionLabel = {
+        let view = UILabel()
+        view.numberOfLines = 2
+        view.font = .systemFont(ofSize: 13)
+        view.textColor = .lightGray
         return view
     }()
     
     let downloadButton = {
         let view = UIButton()
-        view.setTitle("받기", for: .normal)
-        view.backgroundColor = .lightGray
+        var configure = UIButton.Configuration.gray()
+        var title = AttributedString.init("받기")
+        title.font = .systemFont(ofSize: 17, weight: .bold)
+        configure.attributedTitle = title
+//        view.setTitle("받기", for: .normal)
+//        view.backgroundColor = .lightGray
+//        configure.baseBackgroundColor = .lightGray
+//        configure.baseForegroundColor = .systemBlue
+        configure.cornerStyle = .capsule
+        view.configuration = configure
         return view
     }()
     
@@ -48,7 +67,7 @@ final class iTuneCollectionViewCell: UICollectionViewCell {
     }
     
     private func configure() {
-        [appImageView, titleLabel, downloadButton].forEach { subview in
+        [appImageView, titleLabel, descriptionLabel, downloadButton].forEach { subview in
             contentView.addSubview(subview)
         }
         
@@ -60,14 +79,23 @@ final class iTuneCollectionViewCell: UICollectionViewCell {
             make.width.equalTo(appImageView.snp.height)
         }
         
-        titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(appImageView.snp.top)
-            make.leading.equalTo(appImageView.snp.trailing).offset(10)
-        }
-        
         downloadButton.snp.makeConstraints { make in
             make.trailing.equalTo(contentView.safeAreaLayoutGuide).offset(-10)
             make.centerY.equalTo(contentView.snp.centerY)
+            make.width.equalTo(70)
+            make.height.equalTo(30)
+        }
+        
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(appImageView.snp.top)
+            make.leading.equalTo(appImageView.snp.trailing).offset(10)
+            make.trailing.equalTo(downloadButton.snp.leading).offset(-10)
+        }
+        
+        descriptionLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.horizontalEdges.equalTo(titleLabel.snp.horizontalEdges)
+            make.bottom.equalTo(contentView.snp.bottom).offset(-8)
         }
     }
 }

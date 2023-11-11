@@ -41,6 +41,7 @@ final class iTuneViewController: UIViewController {
         items
             .bind(to: collectionView.rx.items(cellIdentifier: iTuneCollectionViewCell.identifier, cellType: iTuneCollectionViewCell.self)) { (row, element, cell) in
                 cell.titleLabel.text = element.trackName
+                cell.descriptionLabel.text = element.description
                 cell.appImageView.kf.setImage(with: URL(string: element.artworkUrl512))
             }
             .disposed(by: disposeBag)
@@ -87,7 +88,7 @@ final class iTuneViewController: UIViewController {
         let spacing = CGFloat(10)
         layout.minimumLineSpacing = spacing
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: 100)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: 80)
         
         return layout
     }
