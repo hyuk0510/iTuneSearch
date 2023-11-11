@@ -14,11 +14,6 @@ import Kingfisher
 
 final class iTuneViewController: UIViewController {
     
-    lazy var tableView = {
-        let view = UITableView()
-        return view
-    }()
-    
     lazy var collectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout())
         return view
@@ -31,6 +26,8 @@ final class iTuneViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
+        title = "앱"
+        navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .white
         bind()
         configure()
@@ -55,12 +52,6 @@ final class iTuneViewController: UIViewController {
             }
             .disposed(by: disposeBag)
         
-        request
-            .drive(with: self) { owner, value in
-                owner.title = "\(value.resultCount)개의 결과"
-            }
-            .disposed(by: disposeBag)
-        
         collectionView.rx.itemSelected
             .subscribe(with: self) { owner, indexPath in
                 let vc = AppDetailViewController()
@@ -70,15 +61,11 @@ final class iTuneViewController: UIViewController {
     }
     
     private func configure() {
-//        view.addSubview(tableView)
         view.addSubview(collectionView)
         
         collectionView.register(iTuneCollectionViewCell.self, forCellWithReuseIdentifier: iTuneCollectionViewCell.identifier)
         collectionView.backgroundColor = .yellow
         collectionView.snp.makeConstraints { make in
-//            make.top.equalTo(view.safeAreaLayoutGuide)
-//            make.horizontalEdges.equalToSuperview()
-//            make.height.equalTo()
             make.edges.equalTo(view.safeAreaLayoutGuide)
         }
     }
